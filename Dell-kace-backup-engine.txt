@@ -1,0 +1,23 @@
+#Script ini menggunakan metode otomatis abort jika terjadi error
+#Disable overwrite, jadi tidak akan tertjadi overwrite apabila file sudah ada.
+#Pertamax 
+#Connec ke server yang akan di backup
+open ftp://putuserhere:putyourpasswordhere:21/
+
+# copy file older than 1 day 
+get *.tgz>1D "L:"
+get *.tgz.manifest>1D "L:"
+get *.sql.gz>1D "L:"
+
+#Sync
+# yang di bawah bukan lcd tv :v tapi merupakan miroring
+#lcd "L:"
+
+#Open folder   
+cd /
+
+# karena sekarang menggunakan mode copy older than, mka sync di matikan (kalo mau ganti sync hilangkan tanda pagar yang di bawah)
+# synchronize local -preservetime -transfer=automatic 
+
+close
+exit
