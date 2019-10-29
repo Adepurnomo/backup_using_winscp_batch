@@ -1,2 +1,3 @@
 # windows-scripts
-backup_using_winscp
+Backup new file only using winSCP
+Tested on DELL KACE
