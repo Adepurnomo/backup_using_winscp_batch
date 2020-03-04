@@ -2,7 +2,7 @@
 #Disable overwrite, jadi tidak akan tertjadi overwrite apabila file sudah ada.
 #Pertamax 
 #Connec ke server yang akan di backup
-open ftp://putuserhere:putyourpasswordhere:21/
+open ftp://server:putuserhere@putyourpasswordhere:21/
 
 # copy file older than 1 day 
 get *.tgz>1D "L:"
